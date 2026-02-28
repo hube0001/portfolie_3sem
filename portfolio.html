@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portefølje – EK</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="nav-logo">Humaira Begum</div>
+    <ul class="nav-links">
+      <li><a href="#hero">Hjem</a></li>
+      <li><a href="#about">Om mig</a></li>
+      <li><a href="#skills">Kompetencer</a></li>
+      <li><a href="#contact">Kontakt</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-image">
+      <div class="hero-image-placeholder">
+        <img src="mig.jpg" alt="billede af Humaira Begum">
+      </div>
+    </div>
+    <div class="hero-text">
+      <div class="hero-name">HUMAIRA BEGUM</div>
+      <div class="hero-sub">Studerende på Multimediedesign — EK</div>
+      <div class="hero-scroll">
+        <span></span>
+        Scroll ned
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="about-left">
+      <div class="section-label">Om mig</div>
+      <ul class="about-list">
+        <li>24 år</li>
+        <li>Kæmpe foodie og elsker at tage til koncerter</li>
+        <li>Har altid intresseret mig for IT men vidste ikke hvor jeg skulle starte</li>
+        <li>Kæmpe sportsfan (for det meste NBA)</li>
+        <li>Har et kritisk øje for hvad der er <strong>æstetisk men også brugerveligt</strong></li>
+        <li>Drevet af idéen om at <strong>design kan ændre</strong> hvordan folk føler</li>
+        <li>Altid klar til nye <strong>udfordringer og samarbejder</strong></li>
+        <li>Forhåbentligt starter jeg på top-up bacheloren i webudvikling næste år og håber på at
+          bygge det videre med en kandidat i datalogi
+        </li>
+        <li>Sigter på at arbejde med frontend-udvikling i fremtiden</li>
+
+      </ul>
+    </div>
+    <div class="about-right">
+      <div class="collage">
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage1.JPG" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collafe2.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage3.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage4.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage5.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS & PROJECTS -->
+  <section id="skills">
+    <div class="section-label">Kompetencer</div>
+    <div class="section-heading">Hvad jeg kan</div>
+
+    <div class="accordion">
+
+      <!-- HTML -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)">
+          <span class="acc-title">HTML</span>
+          <div class="acc-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-num">01</div>
+              <div class="project-title">Semantisk struktur</div>
+              <div class="project-desc">Jeg behersker semantisk HTML5 og opbygger tilgængelige, SEO-venlige sider med
+                korrekt brug af tags som article, section og nav.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">02</div>
+              <div class="project-title">Formular</div>
+              <div class="project-desc">Kan opbygge en kontaktformular som gør det muligt for brugerne at kontakte
+                virksomheden/personen som hjemmesiden drejer sig om.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">03</div>
+              <div class="project-title">Organisere koden</div>
+              <div class="project-desc">Jeg er i stand til at navngive konsistense konventioner som giver et overblik
+                over koden samt lave relevant kommentarer som opdeler koden.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CSS -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)">
+          <span class="acc-title">CSS</span>
+          <div class="acc-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-num">01</div>
+              <div class="project-title">Responsivt layout</div>
+              <div class="project-desc">Bruger CSS Grid og Flexbox til at skabe layouts der fungerer smukt på alle
+                skærmstørrelser - fra mobil til widescreen.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">02</div>
+              <div class="project-title">Animations & micro-interaktioner</div>
+              <div class="project-desc">Designee subtile hover-states, overgange og keyframe-animationer der giver liv
+                til brugergrænsefladen.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">03</div>
+              <div class="project-title">Custom design system</div>
+              <div class="project-desc">Bygget et lille design system med CSS custom properties (variabler) for
+                konsistent typografi, farver og spacing.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- JavaScript -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)">
+          <span class="acc-title">JavaScript</span>
+          <div class="acc-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-num">01</div>
+              <div class="project-title">DOM manipulation</div>
+              <div class="project-desc">Byggede en fungerende lommeregner med vanilla JS - håndterer brugerinput,
+                DOM-manipulation og logik som fejlhåndtering
+                ved ugyldig beregning. -> <a
+                  href="https://github.com/hube0001/exercises/tree/master/lommeregner%20starter%20files"
+                  target="_blank">Se gerne min
+                  lommeregner</a></div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">02</div>
+              <div class="project-title">Data fra JSON</div>
+              <div class="project-desc">Hentede og præsenterede data dynamisk fra en JSON-fil ved hjælp af fetch() og
+                async/await - og genererede HTML-indhold
+                automatisk ud fra dataen.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">03</div>
+              <div class="project-title">Event-drevet interaktion</div>
+              <div class="project-desc">Arbejder med event listeners til at skabe responsive brugergrænseflader der
+                reagerer på klik, input og brugeradfærd i
+                realtid.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Design -->
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)">
+          <span class="acc-title">UX / Figma</span>
+          <div class="acc-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-num">01</div>
+              <div class="project-title">Wireframing</div>
+              <div class="project-desc">Lavede lo-fi wireframes til apps og hjemmesider med fokus på brugerflow og
+                information arkitektur.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">02</div>
+              <div class="project-title">Prototyping</div>
+              <div class="project-desc">Byggede klikkable hi-fi prototyper i Figma med komponent-biblioteker og
+                interaktions-flows.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">03</div>
+              <div class="project-title">Branding projekt</div>
+              <div class="project-desc">Designede visuel identitet for et fiktivt brand – logo, farvepalette, typografi
+                og style guide.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="section-label">Kontakt</div>
+    <div class="section-heading">Få fat på mig!</div>
+    <div class="contact-grid">
+      <div class="contact-info">
+        <p>Er jeg den du leder efter, så skriv gerne til mig på min mail eller benyt dig af kontaktformularen!
+        </p>
+        <div class="contact-detail">
+          <a href="mailto:din@email.dk">Humaira296@gmail.com</a>
+          <a href="praktik.pdf" target="_blank">Se mit CV!</a>
+        </div>
+      </div>
+      <form class="contact-form" action="https://formspree.io/f/mvzbylqa" method="POST">
+        <div class="form-row">
+          <div class="form-group">
+            <label>Navn</label>
+            <input type="text" name="navn" placeholder="Dit navn" required />
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="email" placeholder="din@email.dk" required />
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Emne</label>
+          <input type="text" name="emne" placeholder="Hvad handler det om?" />
+        </div>
+        <div class="form-group">
+          <label>Besked</label>
+          <textarea rows="5" name="besked" placeholder="Skriv din besked her..."></textarea>
+        </div>
+        <button type="submit" class="btn-send">Send besked</button>
+      </form>
+    </div>
+  </section>
+
+
+
+  <script src="js.js"></script>
+</body>
+
+</html>
