@@ -22,6 +22,7 @@
       <li><a href="#hero">Hjem</a></li>
       <li><a href="#about">Om mig</a></li>
       <li><a href="#skills">Kompetencer</a></li>
+      <li><a href="#projects-showcase">Mine projekter</a></li>
       <li><a href="#contact">Kontakt</a></li>
     </ul>
   </nav>
@@ -44,44 +45,7 @@
   </section>
 
   <!-- ABOUT -->
-  <section id="about">
-    <div class="about-left">
-      <div class="section-label">Om mig</div>
-      <ul class="about-list">
-        <li>24 år</li>
-        <li>Kæmpe foodie og elsker at tage til koncerter</li>
-        <li>Har altid intresseret mig for IT men vidste ikke hvor jeg skulle starte</li>
-        <li>Kæmpe sportsfan (for det meste NBA)</li>
-        <li>Har et kritisk øje for hvad der er <strong>æstetisk men også brugerveligt</strong></li>
-        <li>Drevet af idéen om at <strong>design kan ændre</strong> hvordan folk føler</li>
-        <li>Altid klar til nye <strong>udfordringer og samarbejder</strong></li>
-        <li>Forhåbentligt starter jeg på top-up bacheloren i webudvikling næste år og håber på at
-          bygge det videre med en kandidat i datalogi
-        </li>
-        <li>Sigter på at arbejde med frontend-udvikling i fremtiden</li>
 
-      </ul>
-    </div>
-    <div class="about-right">
-      <div class="collage">
-        <div class="collage-item">
-          <div class="collage-placeholder"><img src="collage1.JPG" alt=""></div>
-        </div>
-        <div class="collage-item">
-          <div class="collage-placeholder"><img src="collafe2.jpeg" alt=""></div>
-        </div>
-        <div class="collage-item">
-          <div class="collage-placeholder"><img src="collage3.jpeg" alt=""></div>
-        </div>
-        <div class="collage-item">
-          <div class="collage-placeholder"><img src="collage4.jpeg" alt=""></div>
-        </div>
-        <div class="collage-item">
-          <div class="collage-placeholder"><img src="collage5.jpeg" alt=""></div>
-        </div>
-      </div>
-    </div>
-  </section>
 
   <!-- SKILLS & PROJECTS -->
   <section id="skills">
@@ -161,18 +125,16 @@
             <div class="project-card">
               <div class="project-num">01</div>
               <div class="project-title">DOM manipulation</div>
-              <div class="project-desc">Byggede en fungerende lommeregner med vanilla JS - håndterer brugerinput,
-                DOM-manipulation og logik som fejlhåndtering
-                ved ugyldig beregning. -> <a
-                  href="https://github.com/hube0001/exercises/tree/master/lommeregner%20starter%20files"
-                  target="_blank">Se gerne min
-                  lommeregner</a></div>
+              <div class="project-desc">arbejdet med DOM manipulation på tværs af flere projekter blandt andet i min "To
+                Do List" hvor opgaver dynamisk
+                tilføjes og flyttes mellem kolonner og "Guess the number" feedback opdateres live baseret på brugerens
+                input.</div>
             </div>
             <div class="project-card">
               <div class="project-num">02</div>
               <div class="project-title">Data fra JSON</div>
               <div class="project-desc">Hentede og præsenterede data dynamisk fra en JSON-fil ved hjælp af fetch() og
-                async/await - og genererede HTML-indhold
+                async/await og genererede HTML-indhold
                 automatisk ud fra dataen.</div>
             </div>
             <div class="project-card">
@@ -209,8 +171,49 @@
             <div class="project-card">
               <div class="project-num">03</div>
               <div class="project-title">Branding projekt</div>
-              <div class="project-desc">Designede visuel identitet for et fiktivt brand – logo, farvepalette, typografi
+              <div class="project-desc">Designede visuel identitet for et fiktive og virkelige brands såsom logo,
+                farvepalette, typografi
                 og style guide.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <div class="accordion-header" onclick="toggleAcc(this)">
+          <span class="acc-title">Frameworks</span>
+          <div class="acc-icon">+</div>
+        </div>
+        <div class="accordion-body">
+          <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-num">01</div>
+              <div class="project-title">Komponentbaseret kode</div>
+              <div class="project-desc">Jeg har arbejdet med komponentbaseret kode i både Astro og React hvor jeg
+                har lært at opdele interfaces i
+                genanvendelige og isolerede komponenter. Dette har givet mig en forståelse for hvordan man strukturerer
+                større kodebaser
+                på en overskuelig og skalerbar måde frem for at skrive al logik og markup i én lang fil.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">02</div>
+              <div class="project-title">React</div>
+              <div class="project-desc">Jeg har bygget interaktive brugergrænseflader med React og lært at arbejde med
+                hooks som useState og useEffect til at
+                håndtere state og sideeffekter. I skolen har vi brugt Next.js som framework ovenpå React hvilket har
+                givet mig erfaring
+                med filbaseret routing og server-side rendering samt en forståelse for hvordan React fungerer i et
+                rigtigt
+                produktionsmiljø.</div>
+            </div>
+            <div class="project-card">
+              <div class="project-num">03</div>
+              <div class="project-title">Tailwind</div>
+              <div class="project-desc">Jeg har brugt Tailwind CSS til at style komponenter direkte med utility-classes,
+                hvilket har gjort min workflow
+                betydeligt hurtigere. Det har også lært mig at tænke i et konsistent design system fra starten, frem for
+                at skrive
+                custom CSS fra bunden hver gang.</div>
             </div>
           </div>
         </div>
@@ -219,6 +222,409 @@
     </div>
   </section>
 
+  <!-- PROJECTS SHOWCASE -->
+  <section id="projects-showcase">
+    <div class="projects-showcase-inner">
+      <div class="ps-heading-group">
+        <div class="section-label">Projekter</div>
+        <h2 class="ps-heading">Se nogle af mine projekter</h2>
+      </div>
+
+      <div class="folder-wrapper" onclick="openProjectModal()">
+        <div class="folder">
+          <div class="folder-tab"></div>
+          <div class="folder-body">
+            <div class="folder-icon-row">
+              <svg class="folder-file f1" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="36" height="42" rx="3" fill="var(--white)" stroke="var(--crimson)"
+                  stroke-width="1.5" />
+                <line x1="10" y1="18" x2="30" y2="18" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="24" x2="30" y2="24" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="30" x2="22" y2="30" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+              </svg>
+              <svg class="folder-file f2" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="36" height="42" rx="3" fill="var(--white)" stroke="var(--crimson)"
+                  stroke-width="1.5" />
+                <line x1="10" y1="18" x2="30" y2="18" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="24" x2="30" y2="24" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="30" x2="22" y2="30" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+              </svg>
+              <svg class="folder-file f3" viewBox="0 0 40 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="2" y="6" width="36" height="42" rx="3" fill="var(--white)" stroke="var(--crimson)"
+                  stroke-width="1.5" />
+                <line x1="10" y1="18" x2="30" y2="18" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="24" x2="30" y2="24" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+                <line x1="10" y1="30" x2="22" y2="30" stroke="var(--crimson)" stroke-width="1.5" stroke-linecap="round"
+                  opacity="0.5" />
+              </svg>
+            </div>
+          </div>
+          <div class="folder-label">Kodning & UI/UX Projekter</div>
+        </div>
+        <p class="folder-hint">Klik for at åbne</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECT MODAL -->
+  <div class="project-modal-overlay" id="projectModal" onclick="closeProjectModal(event)">
+    <div class="project-modal">
+
+      <!-- Modal top bar -->
+      <div class="modal-topbar">
+        <div class="modal-header">
+          <svg viewBox="0 0 24 24" fill="none" width="18" height="18">
+            <path
+              d="M3 7C3 5.9 3.9 5 5 5H10L12 7H19C20.1 7 21 7.9 21 9V17C21 18.1 20.1 19 19 19H5C3.9 19 3 18.1 3 17V7Z"
+              fill="var(--crimson)" opacity="0.15" stroke="var(--crimson)" stroke-width="1.5" />
+          </svg>
+          <span>Kodning & UI/UX Projekter</span>
+        </div>
+        <div class="modal-proj-nav">
+          <button class="modal-arrow" id="prevBtn" onclick="slideProject(-1)" disabled>
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+              <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+          <span class="modal-counter" id="modalCounter">1 / 8</span>
+          <button class="modal-arrow" id="nextBtn" onclick="slideProject(1)">
+            <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+              <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+        <button class="modal-close" onclick="closeProjectModal()">✕</button>
+      </div>
+
+      <!-- Modal body: left images + right info -->
+      <div class="modal-body">
+
+        <!-- LEFT: image gallery -->
+        <div class="modal-gallery">
+          <div class="gallery-main">
+            <img id="galleryMainImg" src="" alt="Projektbillede" />
+            <button class="gallery-arrow gallery-prev" onclick="prevImg()">
+              <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                <path d="M15 18l-6-6 6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <button class="gallery-arrow gallery-next" onclick="nextImg()">
+              <svg viewBox="0 0 24 24" fill="none" width="16" height="16">
+                <path d="M9 18l6-6-6-6" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+            </button>
+            <div class="gallery-img-counter" id="imgCounter">1 / 1</div>
+          </div>
+          <div class="gallery-thumbs" id="galleryThumbs"></div>
+        </div>
+
+        <!-- RIGHT: project info -->
+        <div class="modal-info">
+          <div class="modal-slides" id="modalSlides">
+
+            <!-- Projekt 1: Opskrift app -->
+            <div class="modal-slide active">
+              <div class="slide-tag">React</div>
+              <h3 class="slide-title">Opskrift App</h3>
+              <p class="slide-desc">I dette projekt byggede jeg en opskrift-app i React, hvor jeg brugte useState til at
+                håndtere applikationens state —
+                herunder opskrifternes navn, ingredienser, instruktioner og tider. Hver gang brugeren tilføjede en ny
+                ingrediens,
+                opdaterede React automatisk UI'et uden at genindlæse siden, hvilket gav mig en konkret forståelse for
+                hvordan reaktiv
+                state fungerer i praksis. Projektet lærte mig også at tænke i komponenter — jeg opdelte appen i mindre
+                dele som et
+                formular-komponent og et liste-komponent, så koden blev mere overskuelig og genanvendelig.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>useState til at holde styr på dynamiske inputfelter og opskriftdata</li>
+                  <li>Komponentopdeling — formular og liste som separate komponenter</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>Reacts</span><span>CSS</span><span>JavaScript</span><span>Tailwind</span>
+              </div>
+            </div>
+
+            <!-- Projekt 2: Webshop -->
+            <div class="modal-slide">
+              <div class="slide-tag">React · Next.js · Tailwind</div>
+              <h3 class="slide-title">Webshop</h3>
+              <p class="slide-desc">En fuldt funktionel webshop bygget i Next.js med React og Tailwind CSS — med
+                produktoversigt,
+                kategorifiltrering, indkøbskurv og betalingsside. Data hentes fra en ekstern API via en Server
+                Component, og global
+                state håndteres med Zustand, som persisterer brugerens valg i localStorage på tværs af sessioner.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Datahentning med Next.js Server Components og REST API</li>
+                  <li>Global state management med Zustand og localStorage</li>
+                  <li>Komponentbaseret UI med React og Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="slide-tech">
+                <span>React</span><span>Next.js</span><span>Tailwind</span><span>Zustand</span><span>REST
+                  API</span>
+              </div>
+            </div>
+
+
+            <!-- Projekt 3: FamilyFriends -->
+            <div class="modal-slide">
+              <div class="slide-tag">React · Next.js · Tailwind</div>
+              <h3 class="slide-title">FamilyFriends App</h3>
+              <p class="slide-desc">En mobilapp til hundeejere bygget i Next.js med React og Tailwind CSS — med
+                raceoversigt,
+                detaljerede hundeprofiler, favoritsystem og søgefunktion. Data hentes via en Server Component, og
+                favoritterne
+                persisteres i browserens localStorage så brugerens valg huskes på tværs af sessioner. Søgefunktionen er
+                bygget med
+                URL search params, så søgeresultater kan deles og bogmærkes direkte via URL'en.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Datahentning med Next.js Server Components</li>
+                  <li>Persistering af favoritter med localStorage</li>
+                  <li>Søgefunktion med URL search params i Next.js</li>
+                  <li>Komponentbaseret UI med React og Tailwind CSS</li>
+                </ul>
+              </div>
+              <div class="slide-tech">
+                <span>React</span><span>Next.js</span><span>Tailwind</span><span>localStorage</span><span>REST
+                  API</span>
+              </div>
+            </div>
+
+            <!-- Projekt 4: To Do List -->
+            <div class="modal-slide">
+              <div class="slide-tag">JavaScript</div>
+              <h3 class="slide-title">To Do List</h3>
+              <p class="slide-desc">En to-do applikation med prioritetsniveauer, afkrydsning af fuldførte opgaver og
+                slettefunktion. Tasks flyttes automatisk til "Finished Tasks"-kolonnen. Projektet fik mig til at forstå
+                event-drevet programmering og DOM-manipulation i praksis.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Event listeners på dynamisk genererede elementer</li>
+                  <li>Two-column layout med CSS Grid</li>
+                  <li>Dropdown-baseret prioritetssystem</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+
+            <!-- Projekt 5: Guess the Number -->
+            <div class="modal-slide">
+              <div class="slide-tag">JavaScript</div>
+              <h3 class="slide-title">Guess the Number</h3>
+              <p class="slide-desc">Et klassisk gæt-et-tal spil med tilfældig talgenerering, feedback til spilleren og
+                en tæller for antal forsøg. Simpelt men effektivt projekt der styrket min forståelse af
+                conditionals, loops og brugerinteraktion med JS.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Math.random() og betinget logik</li>
+                  <li>Realtids-feedback til brugeren via DOM</li>
+                  <li>Spilstate og reset-funktionalitet</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+
+            <!-- Projekt 6: Breadcrumb Generator -->
+            <div class="modal-slide">
+              <div class="slide-tag">JavaScript</div>
+              <h3 class="slide-title">Breadcrumb Generator</h3>
+              <p class="slide-desc">Etværktøj der genererer navigationsstier (breadcrumbs) dynamisk baseret på
+                URL-struktur. Projektet fokuserede på string-manipulation og dynamisk HTML-generering og gav mig et
+                indblik i
+                hvordan navigationselementer fungerer bag kulisserne.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>URL-parsing og string-splitting i JavaScript</li>
+                  <li>Dynamisk opbygning af navigationselementer</li>
+                  <li>Forståelse af hierarkisk webnavigation</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+
+            <!-- Projekt 7: Maude's café -->
+            <div class="modal-slide">
+              <div class="slide-tag">Frontend · UI/UX · Research</div>
+              <h3 class="slide-title">Maude's Salon Website</h3>
+              <p class="slide-desc">Et projekt fra start til slut for café Maude's Salon på Frederiksber. Vi havde
+                direkte kontakt med
+                en kontaktperson og arbejdede os gennem hele designprocessen. Vi startede med desk research og
+                SoMe-analyse af
+                konkurrerende cafeer, gennemførte brugerinterviews og udarbejdede styletiles og farvepaletter for at
+                finde den rette
+                visuelle retning. Undervejs foretog vi også brugertests for at validere vores designvalg, før vi kodede
+                den færdige
+                multi-page hjemmeside i ren HTML og CSS.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Kontakt med rigtig kunde og kravspecifikation i praksis</li>
+                  <li>Desk research og SoMe-analyse af konkurrenter</li>
+                  <li>Styletiles og farvepaletter som designbeslutningsværktøj</li>
+                  <li>Brugertest og iteration baseret på feedback</li>
+                  <li>Multi-page struktur med ren HTML og CSS</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>UX
+                  Research</span><span>Brugertest</span><span>Styletiles</span></div>
+            </div>
+
+
+            <!-- Projekt 8: Café Arabica -->
+            <div class="modal-slide">
+              <div class="slide-tag">UI/UX · Frontend · Astro</div>
+              <h3 class="slide-title">Café Arabica</h3>
+              <p class="slide-desc">Et større projekt med Café Arabica som real-life case hvor vi havde tæt
+                kontakt med
+                cafeens ejer og gennemførte et ekspertinterview for at forstå hendes vision og krav til hjemmesiden. Vi
+                fik som en
+                af de eneste grupper lov til at bygge et komplet designsystem fra bunden, hvilket krævede ekstra arbejde
+                men gav os
+                en dybere forståelse for visuel konsistens. Processen dækkede det hele: desk research, surveys,
+                brugerinterviews,
+                lo-fi wireframes og klikkable prototyper i Figma og til sidst kodede vi hjemmesiden i Astro som gav os
+                praktisk
+                erfaring med komponentbaseret udvikling.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Ekspertinterview og kravspecifikation med reel kunde</li>
+                  <li>Bygge et komplet designsystem fra bunden i Figma</li>
+                  <li>Surveys og brugerinterviews som grundlag for designbeslutninger</li>
+                  <li>Lo-fi wireframes til hi-fi prototype til færdig hjemmeside</li>
+                  <li>Komponentbaseret udvikling med Astro</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>Astro</span><span>HTML</span><span>CSS</span><span>Figma</span><span>UX
+                  Research</span><span>Designsystem</span></div>
+            </div>
+
+            <!-- Projekt 9: CRTV.ESC -->
+            <div class="modal-slide">
+              <div class="slide-tag">UI/UX · SoMe · Astro</div>
+              <h3 class="slide-title">CRTV.ESC</h3>
+              <p class="slide-desc">Et projekt for Creative Escape som skulle være en platform der samler unge kreative
+                kvinder i
+                København. Projektet var primært content- og SoMe-baseret, men jeg stod selv for al kodning af
+                hjemmesiden i Astro,
+                HTML og CSS. Vi startede med interviews af den rigtige målgruppe for at forstå deres behov, udarbejdede
+                personas,
+                wireframes og klikkable prototyper i Figma — og visualiserede muligt SoMe-indhold direkte i Figma. Jeg
+                oversatte
+                derefter det færdige design til en fungerende hjemmeside.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Interviews af reel målgruppe og persona-udvikling</li>
+                  <li>SoMe-content visualisering og strategi i Figma</li>
+                  <li>Wireframes og prototype til færdig hjemmeside</li>
+                  <li>Selvstændigt ansvar for al kodning med Astro</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>Astro</span><span>HTML</span><span>CSS</span><span>Figma</span><span>UX
+                  Research</span><span>SoMe</span></div>
+            </div>
+
+            <!-- Projekt 10: Bar chart -->
+            <div class="modal-slide">
+              <div class="slide-tag">JavaScript · Data</div>
+              <h3 class="slide-title">Data Visualisering</h3>
+              <p class="slide-desc">En dynamisk søjlediagramsgenerator der visualiserer data som farvekodede søjler
+                baseret på værdier. Projektet lærte mig at arbejde med canvas og SVG-baseret rendering, og hvordan man
+                kan gøre data lettere at forstå gennem visuel repræsentation.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>Dynamisk rendering af grafer med JavaScript</li>
+                  <li>Farveskalaer og betinget styling ud fra data</li>
+                  <li>Grundlæggende datavisualisering til web</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+
+            <!-- Projekt 11: Lommeregner -->
+            <div class="modal-slide">
+              <div class="slide-tag">JavaScript</div>
+              <h3 class="slide-title">Lommeregner</h3>
+              <p class="slide-desc">En fuldt funktionel lommeregner med et mørkt, moderne UI. Bygget i HTML og CSS og
+                gjort interaktiv med vanilla JavaScript. Projektet var mit første møde med DOM-manipulation og event
+                listeners — og gav mig en solid forståelse for logik og brugerinput i JavaScript.</p>
+              <div class="slide-learning">
+                <div class="learning-label">Hvad jeg lærte</div>
+                <ul>
+                  <li>DOM-manipulation og event listeners</li>
+                  <li>UI-design med CSS</li>
+                </ul>
+              </div>
+              <div class="slide-tech"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+            </div>
+
+          </div><!-- /.modal-slides -->
+        </div><!-- /.modal-info -->
+      </div><!-- /.modal-body -->
+    </div><!-- /.project-modal -->
+  </div><!-- /.project-modal-overlay -->
+
+  <section id="about">
+    <div class="about-left">
+      <div class="section-label">Lidt mere om mig</div>
+      <ul class="about-list">
+        <li>24 år</li>
+        <li>Kæmpe foodie og elsker at tage til koncerter</li>
+        <li>Har altid intresseret mig for IT men vidste ikke hvor jeg skulle starte</li>
+        <li>Kæmpe sportsfan (for det meste NBA)</li>
+        <li>Har et kritisk øje for hvad der er <strong>æstetisk men også brugerveligt</strong></li>
+        <li>Drevet af idéen om at <strong>design kan ændre</strong> hvordan folk føler</li>
+        <li>Altid klar til nye <strong>udfordringer og samarbejder</strong></li>
+        <li>Forhåbentligt starter jeg på top-up bacheloren i webudvikling næste år og håber på at
+          bygge det videre med en kandidat i datalogi
+        </li>
+        <li>Sigter på at arbejde med frontend-udvikling i fremtiden</li>
+
+      </ul>
+    </div>
+    <div class="about-right">
+      <div class="collage">
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage1.JPG" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collafe2.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage3.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage4.jpeg" alt=""></div>
+        </div>
+        <div class="collage-item">
+          <div class="collage-placeholder"><img src="collage5.jpeg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </section>
   <!-- CONTACT -->
   <section id="contact">
     <div class="section-label">Kontakt</div>
